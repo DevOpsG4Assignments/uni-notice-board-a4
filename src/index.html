@@ -5,9 +5,93 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>University Digital Notice Board</title>
     <meta name="description" content="University Digital Notice Board for notices, exams, admissions and academic calendar." />
-    
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="University Digital Notice Board">
+        <span class="brand-icon" aria-hidden="true">U</span>
+        <span class="brand-text">Uni Notice Board</span>
+      </a>
 
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="notices.html">Notices</a>
+        <a href="exams.html">Exams</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="academic-calendar.html">Academic Calendar</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1 class="hero-title">University Digital Notice Board</h1>
+      <p class="hero-subtitle">
+        Centralized platform for academic announcements, exams, and admissions.
+      </p>
+    </section>
+
+    <section class="categories">
+      <h2 class="section-title">Quick Categories</h2>
+
+      <div class="category-grid">
+        <article class="category-card">
+          <h3>Academic Notices</h3>
+          <p>Latest departmental announcements.</p>
+          <a href="notices.html" class="card-link">View Notices</a>
+        </article>
+
+        <article class="category-card">
+          <h3>Exam Schedules</h3>
+          <p>Midterms, finals, dates and venue details.</p>
+          <a href="exams.html" class="card-link">View Exams</a>
+        </article>
+
+        <article class="category-card">
+          <h3>Admissions</h3>
+          <p>New intakes, deadlines and eligibility criteria.</p>
+          <a href="admissions.html" class="card-link">View Admissions</a>
+        </article>
+
+        <article class="category-card">
+          <h3>Academic Calendar</h3>
+          <p>Semester timelines, holidays and key dates.</p>
+          <a href="academic-calendar.html" class="card-link">View Calendar</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="recent-section">
+      <h2 class="section-title">Recent Announcements</h2>
+
+      <ul class="notice-list">
+        <li class="notice-item">
+          <strong>Orientation Week</strong>
+          <span class="notice-date">01 Nov 2025</span>
+          <p>Orientation for new students begins next Monday.</p>
+        </li>
+
+        <li class="notice-item">
+          <strong>Midterm Exams</strong>
+          <span class="notice-date">03 Nov 2025</span>
+          <p>Midterm exam schedule has been published.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 University Digital Notice Board</p>
+  </footer>
 </body>
 </html>
