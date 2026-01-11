@@ -1,12 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="utf-8" />
+  <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>University Digital Notice Board</title>
-    <meta name="description" content="University Digital Notice Board for notices, exams, admissions and academic calendar." />
-</head>
-<body>
+    <meta
+      name="description"
+      content="University Digital Notice Board for notices, exams, admissions and academic calendar."
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/admissions.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="University Digital Notice Board"
+        >
+          <span class="brand-icon" aria-hidden="true">U</span>
+          <span class="brand-text">Uni Notice Board</span>
+        </a>
 
-</body>
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-hidden="true"
+        />
+        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="notices.html">Notices</a>
+          <a href="exams.html">Exams</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="academic-calendar.html">Academic Calendar</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="hero">
+        <h1 class="hero-title">Admissions 2026</h1>
+        <p class="hero-subtitle">
+          Join our diverse community of learners. Discover programmes, admission
+          requirements, and start your application today.
+        </p>
+      </section>
+
+      <section class="admission-timeline">
+        <h2 class="section-title">Key Dates</h2>
+        <div class="timeline-wrapper">
+          <div class="timeline-item">
+            <span class="timeline-date">01 Feb 2026</span>
+            <span class="timeline-event">Application Portal Opens</span>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">15 Mar 2026</span>
+            <span class="timeline-event">Application Deadline</span>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">01 May 2026</span>
+            <span class="timeline-event">Results Announcement</span>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">15 Jun 2026</span>
+            <span class="timeline-event">Enrolment Confirmation</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="programs-overview">
+        <h2 class="section-title">Our Programmes</h2>
+        <div class="programs-grid">
+          <div class="program-card">
+            <h3>Bachelor of Science</h3>
+            <p class="program-duration">4 Years</p>
+            <p>Engineering, Mathematics, Physics, Chemistry, Biology</p>
+            <ul>
+              <li>Minimum GPA: 2.5</li>
+              <li>English Proficiency: TOEFL 80+</li>
+              <li>Science background required</li>
+            </ul>
+          </div>
+          <div class="program-card">
+            <h3>Bachelor of Arts</h3>
+            <p class="program-duration">4 Years</p>
+            <p>History, Literature, Philosophy, Economics, Psychology</p>
+            <ul>
+              <li>Minimum GPA: 2.5</li>
+              <li>English Proficiency: TOEFL 75+</li>
+              <li>Strong writing skills</li>
+            </ul>
+          </div>
+          <div class="program-card">
+            <h3>Master of Business Administration</h3>
+            <p class="program-duration">2 Years</p>
+            <p>Strategic Management, Finance, Marketing, Operations</p>
+            <ul>
+              <li>Bachelor's degree required</li>
+              <li>2+ years work experience</li>
+              <li>GMAT score recommended</li>
+            </ul>
+          </div>
+          <div class="program-card">
+            <h3>Master of Science</h3>
+            <p class="program-duration">2 Years</p>
+            <p>Data Science, Environmental Science, Biotechnology</p>
+            <ul>
+              <li>Bachelor's in relevant field</li>
+              <li>Research background desired</li>
+              <li>Letter of intent required</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="eligibility-section">
+        <h2 class="section-title">Eligibility & Requirements</h2>
+        <div class="eligibility-content">
+          <h3>Domestic Students</h3>
+          <ul>
+            <li>High School Diploma or equivalent (Undergraduates)</li>
+            <li>Bachelor's degree (Postgraduates)</li>
+            <li>Minimum GPA as per programme</li>
+            <li>Valid Government ID</li>
+          </ul>
+          <h3>International Students</h3>
+          <ul>
+            <li>Passport and visa eligibility</li>
+            <li>English Language Proficiency Test (TOEFL/IELTS)</li>
+            <li>Academic credentials evaluation</li>
+            <li>Proof of financial capacity</li>
+            <li>Health insurance coverage</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="application-process">
+        <h2 class="section-title">Application Process</h2>
+        <ol class="process-list">
+          <li>
+            <strong>Create Account</strong>
+            <p>
+              Register on the online application portal with your email and
+              personal details.
+            </p>
+          </li>
+          <li>
+            <strong>Choose Programme</strong>
+            <p>
+              Select your preferred programme and intake year from the available
+              options.
+            </p>
+          </li>
+          <li>
+            <strong>Submit Documents</strong>
+            <p>
+              Upload transcripts, essays, references, and other supporting
+              documents.
+            </p>
+          </li>
+          <li>
+            <strong>Pay Application Fee</strong>
+            <p>
+              Complete the non-refundable application fee (Fee waivers may be
+              available).
+            </p>
+          </li>
+          <li>
+            <strong>Interview/Assessment</strong>
+            <p>
+              Selected candidates will be invited for interviews or entrance
+              assessments.
+            </p>
+          </li>
+          <li>
+            <strong>Receive Decision</strong>
+            <p>
+              Admissions decision will be communicated via email and portal.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="faq-section">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-content">
+          <div class="faq-item">
+            <h4>Can I apply to multiple programmes?</h4>
+            <p>
+              Yes, you can apply to up to three programmes in a single
+              application cycle.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4>What is the application fee?</h4>
+            <p>
+              The application fee is $50 USD for all programmes. Some exceptions
+              apply for low-income applicants.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4>How long does the admissions decision take?</h4>
+            <p>
+              Decisions are typically made within 4-6 weeks of the application
+              deadline.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4>Do you offer scholarships?</h4>
+            <p>
+              Yes, merit-based and need-based scholarships are available. Apply
+              through the scholarship portal.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-cta">
+        <h2 class="section-title">Have Questions?</h2>
+        <p class="cta-text">
+          Contact our Admissions Office for more information about programmes,
+          fees, and the application process.
+        </p>
+        <a href="contact.html" class="cta-button">Get in Touch</a>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>© 2025 University Digital Notice Board</p>
+    </footer>
+  </body>
 </html>
