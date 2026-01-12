@@ -1,0 +1,274 @@
+/* ================================
+   Notices Page Wrapper
+================================ */
+.notices-page {
+  padding: 32px 0 12px;
+  animation: pageFade 0.6s ease forwards;
+}
+
+.notices-page h1 {
+  text-align: center;
+  font-size: clamp(1.4rem, 3.5vw, 1.8rem);
+  margin-bottom: 32px;
+  letter-spacing: 0.4px;
+}
+
+/* ================================
+   Notice List Grid
+================================ */
+.notice-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+/* ================================
+   Notice Card
+================================ */
+.notice-card {
+  background-color: #ffffff;
+  padding: 22px;
+  border-radius: 18px;
+  border: 1px solid #f0e4db;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.035);
+  position: relative;
+  overflow: hidden;
+
+  opacity: 0;
+  transform: translateY(16px) scale(0.98);
+  animation: cardEnter 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Staggered entrance */
+.notice-card:nth-child(1) { animation-delay: 0.1s; }
+.notice-card:nth-child(2) { animation-delay: 0.2s; }
+.notice-card:nth-child(3) { animation-delay: 0.3s; }
+.notice-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Accent bar */
+.notice-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #c47a4a,
+    #b3693c
+  );
+  transition: width 0.3s ease;
+}
+
+/* Hover Effects */
+.notice-card:hover {
+  transform: translateY(-6px) scale(1);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.08);
+}
+
+.notice-card:hover::before {
+  width: 8px;
+}
+
+/* ================================
+   Notice Content
+================================ */
+.notice-card h2 {
+  margin: 0 0 6px;
+  font-size: 1.15rem;
+  color: #3a342f;
+}
+
+.notice-date {
+  font-size: 0.8rem;
+  color: #8a786c;
+  margin-bottom: 12px;
+}
+
+.notice-card p {
+  font-size: 0.95rem;
+  color: #6f5f55;
+  line-height: 1.6;
+}
+
+/* ================================
+   Animations
+================================ */
+@keyframes cardEnter {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes pageFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ================================
+   Mobile & Tablet Tweaks
+================================ */
+@media (max-width: 768px) {
+  .notice-list {
+    gap: 18px;
+  }
+
+  .notice-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .notices-page {
+    padding-top: 24px;
+  }
+
+  .notice-card {
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .notice-card h2 {
+    font-size: 1.05rem;
+  }
+}
+/* ================================
+   Mobile & Tablet Side Spacing
+================================ */
+@media (max-width: 900px) {
+  .notices-page {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .notices-page {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .notice-list {
+    gap: 16px;
+  }
+}
+/* ================================
+   Global Side Spacing (ALL screens)
+================================ */
+.notices-page {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Fine-tune for very large screens */
+@media (min-width: 1200px) {
+  .notices-page {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+
+/* Comfortable touch spacing */
+@media (max-width: 600px) {
+  .notices-page {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* ================================
+   Notice Meta & Category Tags
+================================ */
+.notice-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.notice-category {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Category Colors */
+.notice-category.academic { background-color: #c47a4a; }
+.notice-category.holiday { background-color: #4a90c4; }
+.notice-category.library { background-color: #7ac47a; }
+
+/* Make hover more prominent */
+.notice-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12);
+}
+
+.notice-card:hover::before {
+  width: 10px;
+}
+
+/* Optional: subtle card shine effect */
+.notice-card::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.08), transparent 60%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  transform: rotate(25deg);
+}
+
+.notice-card:hover::after {
+  opacity: 1;
+}
+
+/* =========================
+   Month Group Headings 
+============================ */
+.notice-month {
+  grid-column: 1 / -1;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #3a342f;
+  margin: 24px 0 12px;
+  border-bottom: 2px solid #f0e4db;
+  padding-bottom: 4px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .notice-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
+
+/* Month Header (spans grid width) */
+.notice-month {
+  grid-column: 1 / -1;  /* full width */
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #3a342f;
+  margin: 24px 0 12px;
+  border-bottom: 2px solid #f0e4db;
+  padding-bottom: 4px;
+}
