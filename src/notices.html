@@ -5,8 +5,99 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>University Digital Notice Board</title>
     <meta name="description" content="University Digital Notice Board for notices, exams, admissions and academic calendar." />
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/notices.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="University Digital Notice Board">
+            <span class="brand-icon" aria-hidden="true">U</span>
+            <span class="brand-text">Uni Notice Board</span>
+        </a>
 
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="notices.html">Notices</a>
+            <a href="exams.html">Exams</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="academic-calendar.html">Academic Calendar</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        </div>
+    </header>
+
+    <!-- my code -->
+<main class="notices-page container">
+    <h1>University Notices</h1>
+
+    <div class="notice-list">
+
+        <div class="notice-month">January 2026</div>
+
+        <article class="notice-card">
+            <div class="notice-meta">
+                <span class="notice-category academic">Academic</span>
+                <span class="notice-date">10 Jan 2026</span>
+            </div>
+            <h2>Semester Registration Open</h2>
+            <p>
+                Students are informed that semester registration for the Spring 2026
+                session is now open. Last date to apply is 25 Jan 2026.
+            </p>
+        </article>
+
+        <article class="notice-card">
+            <div class="notice-meta">
+                <span class="notice-category holiday">Holiday</span>
+                <span class="notice-date">5 Jan 2026</span>
+            </div>
+            <h2>Holiday Announcement</h2>
+            <p>
+                The university will remain closed on 14 Jan 2026 on account of
+                National Holiday.
+            </p>
+        </article>
+
+        <article class="notice-card">
+            <div class="notice-meta">
+                <span class="notice-category library">Library</span>
+                <span class="notice-date">2 Jan 2026</span>
+            </div>
+            <h2>Library Timings Updated</h2>
+            <p>
+                The central library will now remain open from 8:00 AM to 10:00 PM
+                on all working days.
+            </p>
+        </article>
+
+
+        <div class="notice-month">February 2026</div>
+
+        <article class="notice-card">
+            <div class="notice-meta">
+                <span class="notice-category academic">Academic</span>
+                <span class="notice-date">8 Feb 2026</span>
+            </div>
+            <h2>Midterm Exam Schedule</h2>
+            <p>Midterm exams for Spring 2026 will begin from 15 Feb 2026.</p>
+        </article>
+
+    </div>
+</main>
+
+
+    <footer class="site-footer">
+    <p>© 2025 University Digital Notice Board</p>
+  </footer>
 </body>
 </html>
