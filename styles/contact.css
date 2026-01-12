@@ -172,7 +172,6 @@ body {
   flex-direction: column;
   cursor: pointer;
 }
-
 .nav-toggle-label span {
   width: 24px;
   height: 2px;
