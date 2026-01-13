@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>University Digital Notice Board</title>
-    <meta name="description" content="University Digital Notice Board for notices, exams, admissions and academic calendar." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Exam Schedule | University Digital Notice Board</title>
+  <meta name="description" content="University exam schedules including midterms and final exams." />
+  <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
+
+<header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="University Digital Notice Board">
+        <span class="brand-icon" aria-hidden="true">U</span>
+        <span class="brand-text">Uni Notice Board</span>
+      </a>
+
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="notices.html">Notices</a>
+        <a href="exams.html">Exams</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="academic-calendar.html">Academic Calendar</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+<main class="container">
+
+  <!-- Page Intro -->
+  <section class="hero">
+    <h1 class="hero-title">Examination Schedule</h1>
+    <p class="hero-subtitle">
+      Stay updated with upcoming examinations, timings, and venues.
+    </p>
+  </section>
+
+  <!-- Midterm Exams -->
+  <section class="recent-section">
+    <h2 class="section-title">Midterm Examinations</h2>
+
+    <ul class="notice-list">
+      <li class="notice-item">
+        <strong>BSSE – Midterm Exams</strong>
+        <span class="notice-date">📅 10 Nov 2025 | ⏰ 9:00 AM – 12:00 PM</span>
+        <p>📍 <strong>Venue:</strong> Examination Hall A</p>
+        <p>📘 <strong>Subjects:</strong> Software Engineering, Data Structures</p>
+      </li>
+
+      <li class="notice-item">
+        <strong>BCS – Midterm Exams</strong>
+        <span class="notice-date">📅 12 Nov 2025 | ⏰ 10:00 AM – 1:00 PM</span>
+        <p>📍 <strong>Venue:</strong> Examination Hall B</p>
+        <p>📘 <strong>Subjects:</strong> OOP, Database Systems</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Final Exams -->
+  <section class="recent-section">
+    <h2 class="section-title">Final Examinations</h2>
+
+    <ul class="notice-list">
+      <li class="notice-item">
+        <strong>BSIT – Final Exams</strong>
+        <span class="notice-date">📅 25 Nov 2025 | ⏰ 9:00 AM – 12:00 PM</span>
+        <p>📍 <strong>Venue:</strong> Main Auditorium</p>
+        <p>📘 <strong>Subjects:</strong> Networks, Web Technologies</p>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+    <p>© 2025 University Digital Notice Board</p>
+  </footer>
 
 </body>
 </html>

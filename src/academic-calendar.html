@@ -1,12 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>University Digital Notice Board</title>
-    <meta name="description" content="University Digital Notice Board for notices, exams, admissions and academic calendar." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Academic Calendar | University Digital Notice Board</title>
+  <meta name="description" content="University Academic Calendar with semester schedules, holidays, and key academic dates." />
+  <link rel="stylesheet" href="../styles/academic-calender.css">
 </head>
 <body>
+
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-icon">U</span>
+        <span class="brand-text">Uni Notice Board</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="notices.html">Notices</a>
+        <a href="exams.html">Exams</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="academic-calendar.html">Academic Calendar</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="container calendar-3d">
+
+
+    <section class="hero">
+      <h1 class="hero-title">Academic Calendar</h1>
+      <p class="hero-subtitle">
+        Semester schedules, exams, holidays, and important academic milestones.
+      </p>
+  
+    </section>
+  
+    <section id="semester">
+      <h2 class="section-title">Semester Schedule 2025</h2>
+  
+      <div class="category-grid">
+        <article class="category-card card-3d">
+          <h3>Spring Semester</h3>
+          <p><strong>Classes Start:</strong> 10 Feb 2025</p>
+          <p><strong>Midterms:</strong> 01 – 07 Apr 2025</p>
+          <p><strong>Finals:</strong> 10 – 20 Jun 2025</p>
+          <a href="#" class="card-btn">More Info</a>
+        </article>
+  
+        <article class="category-card card-3d">
+          <h3>Fall Semester</h3>
+          <p><strong>Classes Start:</strong> 05 Aug 2025</p>
+          <p><strong>Midterms:</strong> 01 – 07 Oct 2025</p>
+          <p><strong>Finals:</strong> 05 – 15 Dec 2025</p>
+          <a href="#" class="card-btn">More Info</a>
+        </article>
+      </div>
+    </section>
+  
+ 
+    <section class="recent-section">
+      <h2 class="section-title">Important Academic Dates</h2>
+  
+      <ul class="notice-list">
+        <li class="notice-item card-3d">
+          <strong>Course Registration Deadline</strong>
+          <span class="notice-date">15 Feb 2025</span>
+          <p>Last date to register without late fee.</p>
+          <a href="#" class="card-btn small">More Info</a>
+        </li>
+  
+        <li class="notice-item card-3d">
+          <strong>Result Declaration</strong>
+          <span class="notice-date">30 Jun 2025</span>
+          <p>Final semester results announcement.</p>
+          <a href="#" class="card-btn small">Check Portal</a>
+        </li>
+      </ul>
+    </section>
+  
+  </main>
+  
+
+
+  <footer class="site-footer">
+    <p>© 2025 University Digital Notice Board</p>
+  </footer>
 
 </body>
 </html>
